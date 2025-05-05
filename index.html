@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>登入頁面</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: #fff;
+        }
+
+        .container {
+            text-align: center;
+            width: 300px;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #10a37f;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .divider {
+            margin: 20px 0;
+            position: relative;
+            text-align: center;
+        }
+
+        .divider::before,
+        .divider::after {
+            content: "";
+            position: absolute;
+            height: 1px;
+            width: 40%;
+            top: 50%;
+            background: #ccc;
+        }
+
+        .divider::before {
+            left: 0;
+        }
+
+        .divider::after {
+            right: 0;
+        }
+
+        .divider span {
+            padding: 0 10px;
+            background: #fff;
+        }
+
+        .alt-login {
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .alt-login img {
+            height: 35px;
+            margin-right: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #10a37f;
+        }
+
+        /* 新增 ChatGPT 文字樣式 */
+        .chatgpt-logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 24px;
+            font-weight: bold;
+            color: #fffffff;
+        }
+    </style>
+</head>
+<body>
+<!-- 左上角 ChatGPT 文字 -->
+<div class="chatgpt-logo">CHATGPT</div>
+
+<div class="container">
+    <h2>歡迎回來</h2>
+    <input type="email" placeholder="電子郵件地址" />
+    <button>繼續</button>
+    <p>還沒有帳戶嗎？ <a href="#">註冊</a></p>
+
+    <div class="divider"><span>或</span></div>
+
+    <div class="alt-login"><img src="https://img.icons8.com/color/24/google-logo.png"/> 使用 Google 帳戶繼續</div>
+    <div class="alt-login"><img src="https://img.icons8.com/color/24/microsoft.png"/> 使用 Microsoft 帳戶繼續</div>
+    <div class="alt-login"><img src="https://img.icons8.com/ios-filled/24/mac-os.png"/> 使用 Apple 帳戶繼續</div>
+    <div class="alt-login"><img src="https://img.icons8.com/ios-filled/24/phone.png"/> 使用電話繼續</div>
+
+    <p style="margin-top:20px;">
+        <a href="#">使用條款</a> | <a href="#">隱私權政策</a>
+    </p>
+</div>
+</body>
+</html>
